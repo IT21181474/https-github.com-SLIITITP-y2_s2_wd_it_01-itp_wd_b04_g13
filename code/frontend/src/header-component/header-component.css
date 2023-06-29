@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: #0984e3;
+    padding: 0 30px;
+}
+
+/* brand name section styles */
+.partition-one-logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+}
+
+.brand-name{
+    font-size: 30px;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* link section styles */
+
+.partition-one-link-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    height: 40px;
+}
+
+.link-item-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-text , .icon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-item-container{
+    border-bottom: 3px solid transparent;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    transition: .4s;
+}
+
+.link-item-container:hover{
+    cursor: pointer;
+    border-color: white;
+}
+
+
+.icon{
+    font-size: 24px;
+}
+
+/* user profile stylings */
+
+.partition-one-user-section{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.partition-one-user-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+}

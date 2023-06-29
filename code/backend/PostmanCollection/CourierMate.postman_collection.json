@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "356224f4-5126-4f6c-80bd-877f3da5decb",
+		"name": "CourierMate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddPackage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packageId\": \"P001\",\r\n    \"item\": \"Laptop\",\r\n    \"category\" : \"Electronic\",\r\n    \"specialNotes\": \"Handle With Care\",\r\n    \"acceptedDate\": \"2023-04-24\",\r\n    \"acceptedTime\" : \"08:30\",\r\n    \"customerName\" : \"Isuri Amasha\",\r\n    \"address\" : \"Colombo\",\r\n    \"phone\" : \"0770817059\",\r\n    \"lostAndFound\":\"\",\r\n    \"lostPlace\":\"\",\r\n    \"lostDate\":\"\",\r\n    \"lostTime\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/package",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllPackages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/package/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"package",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPackageById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/package/6446c93a01b96a529061adc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"package",
+						"6446c93a01b96a529061adc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePackage",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"packageId\": \"P001\",\r\n    \"item\": \"Laptop\",\r\n    \"category\" : \"Electronic\",\r\n    \"specialNotes\": \"Handle With Care\",\r\n    \"acceptedDate\": \"2023-04-24\",\r\n    \"acceptedTime\" : \"10:30\",\r\n    \"customerName\" : \"Isuri Amasha\",\r\n    \"address\" : \"Colombo\",\r\n    \"phone\" : \"0770817059\",\r\n    \"lostAndFound\":\"\",\r\n    \"lostPlace\":\"\",\r\n    \"lostDate\":\"\",\r\n    \"lostTime\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/package/6446c93a01b96a529061adc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"package",
+						"6446c93a01b96a529061adc9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePackage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/package/6446c93a01b96a529061adc9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"package",
+						"6446c93a01b96a529061adc9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
