@@ -1,0 +1,29 @@
+.body{
+    background-image: url('bb.jpeg');
+    background-repeat: no-repeat;
+    size:cover;
+   
+   
+}
+.bg-image {
+    background-image: url('bb.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo{ 
+    background-image: url('hh.png');
+    background-repeat: no-repeat;
+    
+
+  }
+
+.yyy{
+  
+    background-image: url('yyy.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+  }
+
+ 
+ 
